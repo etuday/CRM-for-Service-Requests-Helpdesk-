@@ -56,6 +56,32 @@ npm run dev
 ```
 The frontend will boot up on `http://localhost:5173`.
 
+## 🌍 Live Deployment Guide (Optional Bonus)
+
+To earn the "deployment quality" bonus, you can easily host this MERN stack for free.
+
+### Backend Deployment (Render)
+1. Push your repository to GitHub.
+2. Go to [Render.com](https://render.com) and create a **New Web Service**.
+3. Connect your GitHub repository.
+4. Set the Root Directory to `backend/`.
+5. Build Command: `npm install`
+6. Start Command: `npm start`
+7. Add your Environment Variables:
+   - `MONGO_URI`: `(Your MongoDB Atlas string)`
+   - `JWT_SECRET`: `(Any secure random string)`
+   - `PORT`: `5000`
+8. Deploy! Render will give you a live URL (e.g., `https://my-backend.onrender.com`).
+
+### Frontend Deployment (Vercel)
+1. Go to `frontend/src/services/api.js` and update the `baseURL` from `http://localhost:5000/api` to your new Render backend URL.
+2. Commit and push that change to GitHub.
+3. Go to [Vercel.com](https://vercel.com) and click **Add New Project**.
+4. Import your GitHub repository.
+5. In the configuration, set the **Framework Preset** to `Vite`.
+6. Edit the **Root Directory** to `frontend`.
+7. Click Deploy! Vercel will give you a live frontend URL.
+
 ## 📁 Repository Structure
 ```
 ├── backend/
