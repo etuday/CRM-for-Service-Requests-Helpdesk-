@@ -1,4 +1,4 @@
-# Proxima Skills - CRM Service Request Helpdesk
+# CRM Service Request Helpdesk
 
 This repository contains the complete solution for the **Junior Backend Developer Assignment (Option 3: CRM for Service Requests/Helpdesk)**. It is a fully functional, end-to-end MERN stack application designed with a professional, premium UI and secure backend architecture.
 
